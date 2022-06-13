@@ -52,16 +52,25 @@ class _HomeState extends State<Home> {
                         onPressed: () async {
                           await Navigator.of(context).pushNamed('/intermediate');
                         },
-                        child: const Text('中級')
+                        child: const Text('中級1-4')
                     ),
                   ),
                   Container(
                     margin: const EdgeInsets.all(6),
                     child: FloatingActionButton(
                         onPressed: () async {
-                          await Navigator.of(context).pushNamed('/advanced');
+                          await Navigator.of(context).pushNamed('/intermediate5');
                         },
-                        child: const Text('上級')
+                        child: const Text('中級5')
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(6),
+                    child: FloatingActionButton(
+                        onPressed: () async {
+                          await Navigator.of(context).pushNamed('/advanced2');
+                        },
+                        child: const Text('上級2')
                     ),
                   ),
                 ]

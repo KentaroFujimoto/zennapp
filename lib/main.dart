@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:zennapp/beginner.dart';
+import 'package:zennapp/dummy.dart';
 import 'home.dart';
 import 'intermediate.dart';
-import 'advanced.dart';
+import 'intermediate5.dart';
+import 'advanced2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +27,9 @@ class MyApp extends StatelessWidget {
         '/': (BuildContext context) => const Home(),
         '/beginner': (BuildContext context) => const Beginner(),
         '/intermediate': (BuildContext context) => const Intermediate(),
-        '/advanced': (BuildContext context) => const Advanced(),
+        '/intermediate5': (BuildContext context) => const Intermediate5(),
+        '/advanced2': (BuildContext context) => const Advanced2(),
+        '/dummy': (BuildContext context) => const DummyPage(),
       },
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );

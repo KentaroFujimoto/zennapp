@@ -24,7 +24,7 @@ class _BeginnerState extends State<Beginner> {
   }
 
   void _getCounterValue() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    SharedPreferences prefs = await SharedPreferences.getInstance(); //awaitは、その後のやつができるのを待つ。
     setState(() {
       _counter = prefs.getInt('counter') ?? 0;
     });
