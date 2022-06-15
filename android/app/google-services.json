@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "270295600609",
+    "project_id": "zennapp-bcfd7",
+    "storage_bucket": "zennapp-bcfd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270295600609:android:23e0b7c5f422d1892116a0",
+        "android_client_info": {
+          "package_name": "com.example.zennapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270295600609-ta6ua6ircsjuppa91ur982os6o8msv40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM_viQXJ95JmueTJmhmzLBoX0aLIc-KQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270295600609-ta6ua6ircsjuppa91ur982os6o8msv40.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270295600609-sdfequbivlod13cv148s1cjsi7otg2nj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.zennapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

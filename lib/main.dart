@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -7,8 +10,15 @@ import 'home.dart';
 import 'intermediate.dart';
 import 'intermediate5.dart';
 import 'advanced2.dart';
+import 'janken.dart';
+import 'youtube.dart';
+import 'firebase_auth.dart';
+import 'firebase_store.dart';
+import 'dummy.dart';
 
-void main() {
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -29,6 +39,10 @@ class MyApp extends StatelessWidget {
         '/intermediate': (BuildContext context) => const Intermediate(),
         '/intermediate5': (BuildContext context) => const Intermediate5(),
         '/advanced2': (BuildContext context) => const Advanced2(),
+        '/youtube': (BuildContext context) => const YouTube(),
+        '/janken': (BuildContext context) => const Janken(),
+        '/firebase_auth': (BuildContext context) => const MyFirebaseAuth(),
+        '/firebase_store': (BuildContext context) => const MyFirebaseStore(),
         '/dummy': (BuildContext context) => const DummyPage(),
       },
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
